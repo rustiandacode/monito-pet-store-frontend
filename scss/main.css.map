@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"main.css"}
+{"version":3,"sources":["base/_reset.scss","base/_typography.scss","main.css"],"names":[],"mappings":"AACQ,6FAAA;AAER;EACE,UAAA;EACA,SAAA;EACA,kCCJY;ACGd;;AFIA;EACE,qBAAA;AEDF;;AFIA;EACE,gBAAA;AEDF;;AFIA;EACE,YAAA;AEDF;;AFIA;EACE,aAAA;AEDF;;AFIA;EACE,YAAA;AEDF","file":"main.css"}
