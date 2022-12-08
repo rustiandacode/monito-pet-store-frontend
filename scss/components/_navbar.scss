@@ -1,0 +1,68 @@
+@use '../abstracts/mixin' as mixin;
+@use '../base/colors' as colors;
+
+nav {
+  position: absolute;
+  width: 100%;
+  padding: 30px 130px;
+  @include mixin.flexbox;
+  .nav-mobile {
+    font-size: 28px;
+    color: colors.$dark-blue-main;
+    display: none;
+  }
+  ul {
+    @include mixin.flexbox;
+    gap: 17%;
+    img {
+      cursor: pointer;
+    }
+    a {
+      color: colors.$dark-blue-main;
+      font-weight: 550;
+      font-size: 16px;
+    }
+  }
+  .btn-group {
+    @include mixin.flexbox(flex-start);
+    .search-bar {
+      background-color: colors.$neutral-00;
+      padding: 7px 15px;
+      margin-right: 10px;
+      border-radius: 20px;
+      i {
+        background-color: colors.$neutral-00;
+        color: colors.$neutral-60;
+      }
+      input {
+        background-color: colors.$neutral-00;
+        margin-left: 5px;
+        font-size: 16px;
+        width: 230px;
+      }
+      input::placeholder {
+        font-size: 16px;
+        font-weight: 550;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  nav {
+    padding: 30px 0px;
+    justify-content: space-around;
+    .nav-mobile {
+      display: block;
+      cursor: pointer;
+    }
+    ul {
+      li {
+        display: none;
+      }
+    }
+    .btn-group {
+      display: none;
+    }
+  }
+}

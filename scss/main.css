@@ -109,6 +109,7 @@ p {
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  background-color: #f1d092;
 }
 
 body {
@@ -154,15 +155,10 @@ button {
   border-radius: 20px;
   cursor: pointer;
   border: 2.5px solid #003456;
-  font-size: 14px;
+  font-size: 16px;
 }
 .btn-light i {
   padding-left: 5px;
-}
-
-body {
-  padding: 50px;
-  background-color: #f1d092;
 }
 
 .card {
@@ -175,6 +171,91 @@ body {
   width: 100%;
   margin-bottom: 10px;
 }
+.card .categories {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 5px;
+}
 .card .categories span {
   color: #667479;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  padding: 30px 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-mobile {
+  font-size: 28px;
+  color: #003456;
+  display: none;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 17%;
+}
+nav ul img {
+  cursor: pointer;
+}
+nav ul a {
+  color: #003456;
+  font-weight: 550;
+  font-size: 16px;
+}
+nav .btn-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+nav .btn-group .search-bar {
+  background-color: #fdfdfd;
+  padding: 7px 15px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+nav .btn-group .search-bar i {
+  background-color: #fdfdfd;
+  color: #667479;
+}
+nav .btn-group .search-bar input {
+  background-color: #fdfdfd;
+  margin-left: 5px;
+  font-size: 16px;
+  width: 230px;
+}
+nav .btn-group .search-bar input::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 550;
+}
+nav .btn-group .search-bar input:-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 550;
+}
+nav .btn-group .search-bar input::placeholder {
+  font-size: 16px;
+  font-weight: 550;
+}
+
+@media only screen and (max-width: 1350px) {
+  nav {
+    padding: 30px 0px;
+    justify-content: space-around;
+  }
+  nav .nav-mobile {
+    display: block;
+    cursor: pointer;
+  }
+  nav ul li {
+    display: none;
+  }
+  nav .btn-group {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
