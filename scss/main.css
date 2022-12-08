@@ -135,10 +135,6 @@ button {
   border: none;
 }
 
-body {
-  padding: 50px;
-}
-
 .btn-dark {
   background-color: #003456;
   color: #fdfdfd;
@@ -162,4 +158,23 @@ body {
 }
 .btn-light i {
   padding-left: 5px;
+}
+
+body {
+  padding: 50px;
+  background-color: #f1d092;
+}
+
+.card {
+  padding: 1rem;
+  background-color: white;
+  width: 285px;
+}
+.card img {
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.card .categories span {
+  color: #667479;
 }/*# sourceMappingURL=main.css.map */

@@ -11,7 +11,7 @@ $font-family: 'Poppins', sans-serif;
   line-height: $lh;
 }
 
-// font weight
+// font-weight
 .bold {
   font-weight: bolder;
 }
@@ -45,8 +45,7 @@ h3 {
   }
 }
 
-// body text
-
+// body-text
 p {
   @include text-style(20px, 32px, colors.$neutral-100);
 }
