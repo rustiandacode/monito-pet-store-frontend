@@ -1,3 +1,82 @@
-// font family link
+@use 'colors';
+
+// font family
 $font-url: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap';
 $font-family: 'Poppins', sans-serif;
+
+// mixin for text style
+@mixin text-style($size, $lh: 1rem, $color) {
+  color: $color;
+  font-size: $size;
+  line-height: $lh;
+}
+
+// font weight
+.bold {
+  font-weight: bolder;
+}
+.medium {
+  font-weight: 550;
+}
+.reguler {
+  font-weight: normal;
+}
+
+// heading text-style
+h1 {
+  @include text-style(46px, 60px, colors.$dark-blue-main);
+}
+h2 {
+  @include text-style(36px, 54px, colors.$dark-blue-main);
+}
+h3 {
+  @include text-style(24px, 36px, colors.$dark-blue-main);
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    @include text-style(28px, 38px, colors.$dark-blue-main);
+  }
+  h2 {
+    @include text-style(24px, 36px, colors.$dark-blue-main);
+  }
+  h3 {
+    @include text-style(20px, 32px, colors.$dark-blue-main);
+  }
+}
+
+// body text
+
+p {
+  @include text-style(20px, 32px, colors.$neutral-100);
+}
+.p16 {
+  @include text-style(16px, 24px, colors.$neutral-100);
+}
+.p14 {
+  @include text-style(14px, 20px, colors.$neutral-100);
+}
+.p12 {
+  @include text-style(12px, 18px, colors.$neutral-100);
+}
+.p10 {
+  @include text-style(10px, 16px, colors.$neutral-100);
+}
+.p8 {
+  @include text-style(8px, 12px, colors.$neutral-100);
+}
+
+@media only screen and (max-width: 400px) {
+  p {
+    @include text-style(14px, 20px, colors.$neutral-100);
+  }
+  .p16 {
+    @include text-style(12px, 18px, colors.$neutral-100);
+  }
+  .p14 {
+    @include text-style(10px, 16px, colors.$neutral-100);
+  }
+  .p12 {
+    @include text-style(8px, 12px, colors.$neutral-100);
+  }
+}
