@@ -11,6 +11,12 @@
   font-weight: normal;
 }
 
+.heading-banner {
+  color: #003456;
+  font-size: 60px;
+  line-height: 68px;
+}
+
 h1 {
   color: #003456;
   font-size: 46px;
@@ -30,6 +36,11 @@ h3 {
 }
 
 @media only screen and (max-width: 800px) {
+  .heading-banner {
+    color: #003456;
+    font-size: 38px;
+    line-height: 60px;
+  }
   h1 {
     color: #003456;
     font-size: 28px;
@@ -109,7 +120,6 @@ p {
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  background-color: #f1d092;
 }
 
 body {
@@ -143,7 +153,7 @@ button {
   border-radius: 20px;
   cursor: pointer;
   border: 2.5px solid #003456;
-  font-size: 14px;
+  font-size: 16px;
 }
 .btn-dark i {
   padding-left: 5px;
@@ -154,6 +164,7 @@ button {
   padding: 0.5rem 1.5rem;
   border-radius: 20px;
   cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
   border: 2.5px solid #003456;
   font-size: 16px;
 }
@@ -183,9 +194,10 @@ button {
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   width: 100%;
   padding: 30px 130px;
+  background-color: #fceed5;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -199,7 +211,7 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 17%;
+  gap: 20%;
 }
 nav ul img {
   cursor: pointer;
@@ -257,5 +269,46 @@ nav .btn-group .search-bar input::placeholder {
   }
   nav .btn-group {
     display: none;
+  }
+}
+.hero {
+  padding: 110px 130px;
+  background-color: #fceed5;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.hero .hero-content,
+.hero .hero-image {
+  width: 50%;
+}
+.hero .hero-content {
+  margin-top: 90px;
+}
+.hero .hero-content p {
+  margin: 20px 0 30px 0;
+  width: 500px;
+}
+.hero .hero-content .btn-light {
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+    padding: 30px 1.5rem 0 1.5rem;
+  }
+  .hero .hero-content,
+.hero .hero-image {
+    width: 100%;
+  }
+  .hero .hero-content p {
+    width: auto;
+  }
+  .hero .hero-image {
+    margin-top: 30px;
+  }
+  .hero .hero-image img {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

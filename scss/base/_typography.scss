@@ -23,6 +23,11 @@ $font-family: 'Poppins', sans-serif;
 }
 
 // heading text-style
+
+.heading-banner {
+  @include text-style(60px, 68px, colors.$dark-blue-main);
+}
+
 h1 {
   @include text-style(46px, 60px, colors.$dark-blue-main);
 }
@@ -34,6 +39,9 @@ h3 {
 }
 
 @media only screen and (max-width: 800px) {
+  .heading-banner {
+    @include text-style(38px, 60px, colors.$dark-blue-main);
+  }
   h1 {
     @include text-style(28px, 38px, colors.$dark-blue-main);
   }

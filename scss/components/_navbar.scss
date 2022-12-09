@@ -2,9 +2,10 @@
 @use '../base/colors' as colors;
 
 nav {
-  position: absolute;
+  position: fixed;
   width: 100%;
   padding: 30px 130px;
+  background-color: colors.$mon-yellow-40;
   @include mixin.flexbox;
   .nav-mobile {
     font-size: 28px;
@@ -13,7 +14,7 @@ nav {
   }
   ul {
     @include mixin.flexbox;
-    gap: 17%;
+    gap: 20%;
     img {
       cursor: pointer;
     }
