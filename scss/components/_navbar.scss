@@ -3,9 +3,9 @@
 
 nav {
   position: fixed;
+  z-index: 2;
   width: 100%;
   padding: 30px 130px;
-  background-color: colors.$mon-yellow-40;
   @include mixin.flexbox;
   .nav-mobile {
     font-size: 28px;
