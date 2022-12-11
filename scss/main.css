@@ -384,6 +384,20 @@ nav .btn-group .search-bar input::placeholder {
   background-color: #f7dba7;
 }
 
+@media only screen and (max-width: 500px) {
+  .obj4 {
+    width: 100px;
+    left: 40px;
+    height: 100px;
+    top: 550px;
+  }
+  .obj5 {
+    width: 100px;
+    left: 80px;
+    height: 100px;
+    top: 550px;
+  }
+}
 @media only screen and (max-width: 800px) {
   .hero {
     flex-direction: column;
@@ -397,7 +411,7 @@ nav .btn-group .search-bar input::placeholder {
     width: auto;
   }
   .hero .hero-image {
-    margin-top: 30px;
+    margin-top: 50px;
   }
   .hero .hero-image img {
     width: 100%;
