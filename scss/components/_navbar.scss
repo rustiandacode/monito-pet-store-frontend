@@ -49,6 +49,12 @@ nav {
   }
 }
 
+.navbar-scroll {
+  background-color: colors.$mon-yellow-40;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  transition: all 500ms ease-in-out;
+}
+
 @media only screen and (max-width: 1350px) {
   nav {
     padding: 30px 0px;

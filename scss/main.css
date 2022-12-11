@@ -253,6 +253,12 @@ nav .btn-group .search-bar input::placeholder {
   font-weight: 550;
 }
 
+.navbar-scroll {
+  background-color: #fceed5;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  transition: all 500ms ease-in-out;
+}
+
 @media only screen and (max-width: 1350px) {
   nav {
     padding: 30px 0px;
@@ -396,4 +402,7 @@ nav .btn-group .search-bar input::placeholder {
   .hero .hero-image img {
     width: 100%;
   }
+}
+.product-recomendation {
+  height: 100vh;
 }/*# sourceMappingURL=main.css.map */
