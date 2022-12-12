@@ -73,7 +73,7 @@ p {
   @include text-style(8px, 12px, colors.$neutral-100);
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   p {
     @include text-style(14px, 20px, colors.$neutral-100);
   }
@@ -85,5 +85,11 @@ p {
   }
   .p12 {
     @include text-style(8px, 12px, colors.$neutral-100);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .p12 {
+    @include text-style(6px, 10px, colors.$neutral-100);
   }
 }

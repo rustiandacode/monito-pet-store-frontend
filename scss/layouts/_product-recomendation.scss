@@ -2,5 +2,30 @@
 @use '../base/colors' as colors;
 
 .product-recomendation {
-  height: 100vh;
+  padding: 50px 130px;
+  .recomendation-header {
+    @include mixin.flexbox;
+    margin-bottom: 30px;
+  }
+  .recomendation-product {
+    @include mixin.flexbox(space-evenly);
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .product-recomendation {
+    padding: 30px 1.5rem 0 1.5rem;
+    .recomendation-header {
+      button {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .product-recomendation {
+    padding: 30px 1.5rem 0 1.5rem;
+  }
 }
