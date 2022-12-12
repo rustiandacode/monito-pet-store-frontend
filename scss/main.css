@@ -177,6 +177,19 @@ button {
   padding-left: 5px;
 }
 
+.btn-light-full {
+  color: #003456;
+  padding: 0.5rem 0;
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2.5px solid #003456;
+}
+.btn-light-full i {
+  padding-left: 5px;
+}
+
 .card {
   padding: 1rem;
   background-color: white;
@@ -367,7 +380,7 @@ nav .btn-group .search-bar input::placeholder {
   position: absolute;
   background-color: #003456;
   bottom: -100px;
-  right: 500px;
+  right: 400px;
   border-radius: 80px;
   rotate: 10deg;
 }
@@ -377,7 +390,7 @@ nav .btn-group .search-bar input::placeholder {
   height: 600px;
   background-color: #f7dba7;
   bottom: -200px;
-  right: 205px;
+  right: 105px;
   border-radius: 80px;
   rotate: 25deg;
 }
@@ -469,7 +482,7 @@ nav .btn-group .search-bar input::placeholder {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .product-recomendation .recomendation-product {
   display: flex;
@@ -477,12 +490,19 @@ nav .btn-group .search-bar input::placeholder {
   align-items: center;
   flex-wrap: wrap;
 }
+.product-recomendation .btn-light-full {
+  display: none;
+  margin: 1.5rem 0;
+}
 
 @media only screen and (max-width: 800px) {
   .product-recomendation {
     padding: 30px 1.5rem 0 1.5rem;
   }
   .product-recomendation .recomendation-header button {
+    display: none;
+  }
+  .btn-light-full {
     display: none;
   }
 }
