@@ -8,8 +8,6 @@ function navbarScroll() {
   } else if (calc <= 0) {
     navbar.classList.remove('navbar-scroll');
   }
-
-  console.log(calc);
 }
 
 window.onscroll = () => {

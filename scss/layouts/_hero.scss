@@ -119,17 +119,33 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .obj4 {
-    width: 100px;
-    left: 40px;
-    height: 100px;
-    top: 550px;
-  }
-  .obj5 {
-    width: 100px;
-    left: 80px;
-    height: 100px;
-    top: 550px;
+  .hero {
+    .obj4 {
+      width: 400px;
+      left: 40px;
+      height: 600px;
+      top: 550px;
+      border-radius: 50px;
+    }
+    .obj5 {
+      width: 400px;
+      left: 80px;
+      height: 600px;
+      top: 525px;
+      border-radius: 50px;
+    }
+    .obj6 {
+      width: 30px;
+      height: 30px;
+      left: 350px;
+      top: 180px;
+    }
+    .obj7 {
+      width: 20px;
+      height: 20px;
+      left: 350px;
+      top: 190px;
+    }
   }
 }
 
@@ -151,6 +167,9 @@
       img {
         width: 100%;
       }
+    }
+    .obj2 {
+      display: none;
     }
   }
 }

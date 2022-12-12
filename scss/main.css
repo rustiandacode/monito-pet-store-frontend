@@ -385,17 +385,31 @@ nav .btn-group .search-bar input::placeholder {
 }
 
 @media only screen and (max-width: 500px) {
-  .obj4 {
-    width: 100px;
+  .hero .obj4 {
+    width: 400px;
     left: 40px;
-    height: 100px;
+    height: 600px;
     top: 550px;
+    border-radius: 50px;
   }
-  .obj5 {
-    width: 100px;
+  .hero .obj5 {
+    width: 400px;
     left: 80px;
-    height: 100px;
-    top: 550px;
+    height: 600px;
+    top: 525px;
+    border-radius: 50px;
+  }
+  .hero .obj6 {
+    width: 30px;
+    height: 30px;
+    left: 350px;
+    top: 180px;
+  }
+  .hero .obj7 {
+    width: 20px;
+    height: 20px;
+    left: 350px;
+    top: 190px;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -415,6 +429,9 @@ nav .btn-group .search-bar input::placeholder {
   }
   .hero .hero-image img {
     width: 100%;
+  }
+  .hero .obj2 {
+    display: none;
   }
 }
 .product-recomendation {
