@@ -28,6 +28,10 @@ $font-family: 'Poppins', sans-serif;
   @include text-style(60px, 68px, colors.$dark-blue-main);
 }
 
+.heading-banner-2 {
+  @include text-style(52px, 68px, colors.$dark-blue-main);
+}
+
 h1 {
   @include text-style(46px, 60px, colors.$dark-blue-main);
 }
@@ -38,9 +42,12 @@ h3 {
   @include text-style(24px, 36px, colors.$dark-blue-main);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 500px) {
   .heading-banner {
     @include text-style(38px, 60px, colors.$dark-blue-main);
+  }
+  .heading-banner-2 {
+    @include text-style(32px, 60px, colors.$dark-blue-main);
   }
   h1 {
     @include text-style(28px, 38px, colors.$dark-blue-main);
@@ -64,6 +71,9 @@ p {
   @include text-style(14px, 20px, colors.$neutral-100);
 }
 .p12 {
+  @include text-style(12px, 18px, colors.$neutral-100);
+}
+.p12-fixed {
   @include text-style(12px, 18px, colors.$neutral-100);
 }
 .p10 {

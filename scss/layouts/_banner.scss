@@ -1,0 +1,92 @@
+@use '../abstracts/mixin' as mixin;
+@use '../base/colors' as colors;
+
+.banner {
+  margin: 50px 130px;
+  .obj1,
+  .obj2 {
+    position: absolute;
+    background-color: aqua;
+    width: 700px;
+    height: 700px;
+    border-radius: 100px;
+  }
+  .obj1 {
+    background-color: colors.$dark-blue-80;
+    left: -180px;
+    bottom: -500px;
+    rotate: 30deg;
+  }
+  .obj2 {
+    background-color: colors.$mon-yellow-40;
+    right: -120px;
+    bottom: -50px;
+    rotate: -60deg;
+  }
+
+  .container {
+    @include mixin.flexbox(space-around);
+    background-color: colors.$dark-blue-main;
+    border-radius: 20px;
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 55vh;
+      margin-bottom: -75px;
+      z-index: 1;
+    }
+    .banner-content {
+      width: 450px;
+      text-align: end;
+      z-index: 1;
+      p {
+        margin: 20px 0;
+      }
+      button {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .banner {
+    margin: 30px 1.5rem 0 1.5rem;
+    .obj1 {
+      bottom: -600px;
+    }
+    .obj2 {
+      width: 600px;
+      height: 580px;
+      top: -300px;
+      rotate: 15deg;
+    }
+    .container {
+      height: 600px;
+      flex-direction: column-reverse;
+      gap: 10%;
+      .banner-content {
+        padding: 1em 0;
+        width: 90%;
+        text-align: center;
+        p {
+          width: auto;
+        }
+      }
+
+      img {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .banner {
+    .container {
+      height: 500px;
+    }
+  }
+}
