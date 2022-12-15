@@ -23,6 +23,27 @@
       color: colors.$neutral-60;
     }
   }
+  .gift {
+    @include mixin.flexbox(start);
+    margin-top: 10px;
+    border-radius: 5px;
+    gap: 5%;
+    padding: 0.1rem;
+    background-color: colors.$mon-yellow-40;
+    span {
+      width: 8px;
+      height: 8px;
+      border-radius: 10px;
+      background-color: colors.$dark-blue-main;
+    }
+    img {
+      width: 8%;
+      margin-left: 10px;
+    }
+    p {
+      color: colors.$dark-blue-main;
+    }
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -36,6 +57,12 @@
   .card {
     width: 160px;
     padding: 10px;
+    .gift {
+      span {
+        width: 5px;
+        height: 5px;
+      }
+    }
   }
 }
 

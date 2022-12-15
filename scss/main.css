@@ -231,6 +231,29 @@ button {
 .card .categories span {
   color: #667479;
 }
+.card .gift {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 10px;
+  border-radius: 5px;
+  gap: 5%;
+  padding: 0.1rem;
+  background-color: #fceed5;
+}
+.card .gift span {
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+  background-color: #003456;
+}
+.card .gift img {
+  width: 8%;
+  margin-left: 10px;
+}
+.card .gift p {
+  color: #003456;
+}
 
 @media only screen and (max-width: 600px) {
   .card {
@@ -242,6 +265,10 @@ button {
   .card {
     width: 160px;
     padding: 10px;
+  }
+  .card .gift span {
+    width: 5px;
+    height: 5px;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -612,5 +639,32 @@ nav .btn-group .search-bar input::placeholder {
 @media only screen and (max-width: 800px) {
   .banner .container {
     height: 500px;
+  }
+}
+.our-product {
+  margin: 50px 130px;
+}
+.our-product .our-product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.our-product .our-products {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 810px) {
+  .our-product {
+    margin: 30px 1.5rem 0 1.5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .card {
+    width: 140px;
+    padding: 10px;
   }
 }/*# sourceMappingURL=main.css.map */
