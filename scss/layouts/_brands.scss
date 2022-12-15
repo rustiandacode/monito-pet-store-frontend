@@ -1,0 +1,14 @@
+@use '../abstracts/mixin' as mixin;
+
+.brands {
+  margin: 50px 130px;
+  .brands-title {
+    @include mixin.flexbox;
+    margin-bottom: 20px;
+  }
+  .brands-logo {
+    @include mixin.flexbox;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

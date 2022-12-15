@@ -667,4 +667,20 @@ nav .btn-group .search-bar input::placeholder {
     width: 140px;
     padding: 10px;
   }
+}
+.brands {
+  margin: 50px 130px;
+}
+.brands .brands-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.brands .brands-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }/*# sourceMappingURL=main.css.map */
