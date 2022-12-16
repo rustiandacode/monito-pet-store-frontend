@@ -683,4 +683,59 @@ nav .btn-group .search-bar input::placeholder {
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+.banner-2 {
+  margin: 50px 130px;
+}
+.banner-2 .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: auto;
+  background-color: #ffb775;
+  position: relative;
+}
+.banner-2 .container .banner-content {
+  z-index: 1;
+  margin-left: 70px;
+}
+.banner-2 .container .banner-content p {
+  margin: 20px 0;
+  max-width: 300px;
+}
+.banner-2 .container .banner-content button {
+  margin-right: 10px;
+}
+.banner-2 .container .banner-image {
+  position: relative;
+}
+.banner-2 .container .banner-image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: -10px;
+}
+.banner-2 .container .obj1,
+.banner-2 .container .obj2 {
+  position: absolute;
+}
+.banner-2 .container .obj1 {
+  width: 600px;
+  height: 630px;
+  background-color: antiquewhite;
+  border-radius: 70px;
+  rotate: 50deg;
+  left: -90px;
+  top: -130px;
+}
+.banner-2 .container .obj2 {
+  width: 1000px;
+  height: 1700px;
+  background-color: #f1d092;
+  border-radius: 70px;
+  rotate: 50deg;
+  right: -70px;
+  top: 100px;
 }/*# sourceMappingURL=main.css.map */
