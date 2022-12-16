@@ -214,7 +214,8 @@ button {
   margin: 10px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  width: 250px;
+  max-width: 250px;
+  cursor: pointer;
 }
 .card img {
   border-radius: 10px;
@@ -738,4 +739,36 @@ nav .btn-group .search-bar input::placeholder {
   rotate: 50deg;
   right: -70px;
   top: 100px;
+}
+
+.blog {
+  margin: 50px 130px;
+}
+.blog .blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.blog .blog-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.blog .blog-content .card {
+  max-width: 340px;
+}
+.blog .blog-content .card .category p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 8px;
+  padding: 0.5em 0.9em;
+  background-color: #00a7e7;
+  color: #fdfdfd;
+}
+.blog .blog-content .card .blog-title {
+  color: #00171f;
+  margin: 10px 0;
 }/*# sourceMappingURL=main.css.map */

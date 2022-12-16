@@ -1,0 +1,31 @@
+@use '../abstracts/mixin' as mixin;
+@use '../base/colors' as colors;
+
+.blog {
+  margin: 50px 130px;
+
+  .blog-header {
+    @include mixin.flexbox;
+    margin-bottom: 20px;
+  }
+  .blog-content {
+    @include mixin.flexbox;
+    flex-wrap: wrap;
+    .card {
+      max-width: 340px;
+      .category {
+        p {
+          width: fit-content;
+          border-radius: 8px;
+          padding: 0.5em 0.9em;
+          background-color: colors.$blue-sea;
+          color: colors.$neutral-00;
+        }
+      }
+      .blog-title {
+        color: colors.$neutral-100;
+        margin: 10px 0;
+      }
+    }
+  }
+}

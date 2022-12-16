@@ -3,13 +3,16 @@
 
 // html example :  https://bit.ly/3PhRL0v
 
+// card for product
+
 .card {
   padding: 1rem;
   background-color: white;
   margin: 10px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  width: 250px;
+  max-width: 250px;
+  cursor: pointer;
   img {
     border-radius: 10px;
     width: 100%;
