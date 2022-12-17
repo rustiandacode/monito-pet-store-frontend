@@ -1,0 +1,77 @@
+@use '../abstracts/mixin' as mixin;
+@use '../base/colors' as colors;
+
+footer {
+  padding: 50px 130px;
+  background-color: colors.$mon-yellow-40;
+  .subscribe-form {
+    border-radius: 10px;
+    background-color: colors.$dark-blue-main;
+    @include mixin.flexbox;
+    gap: 10px;
+    padding: 2rem 1.5rem;
+    .form-title {
+      p {
+        font-size: 24px;
+        color: colors.$neutral-00;
+        font-weight: 500;
+      }
+      width: 40%;
+    }
+    .form-input {
+      padding: 1rem;
+      border-radius: 10px;
+      height: 72px;
+      background-color: colors.$neutral-00;
+      width: 60%;
+      @include mixin.flexbox;
+      gap: 10px;
+      input {
+        width: 90%;
+        height: 40px;
+        border: 1.5px solid colors.$neutral-40;
+        border-radius: 8px;
+        padding: 1em;
+      }
+      input::placeholder {
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      button {
+        height: 40px;
+        width: 20%;
+        background-color: colors.$dark-blue-main;
+        color: colors.$neutral-00;
+        border-radius: 8px;
+      }
+    }
+  }
+  .footer-links {
+    @include mixin.flexbox;
+    padding: 40px 0;
+    border-bottom: 1.5px solid colors.$neutral-20;
+    ul {
+      @include mixin.flexbox;
+      gap: 20px;
+      a {
+        color: colors.$neutral-100;
+      }
+    }
+    .social-media {
+      @include mixin.flexbox;
+      gap: 20px;
+    }
+  }
+  .copyright {
+    @include mixin.flexbox;
+    padding-top: 50px;
+    a {
+      margin-right: 10px;
+      color: colors.$neutral-60;
+    }
+    p {
+      color: colors.$neutral-60;
+    }
+  }
+}

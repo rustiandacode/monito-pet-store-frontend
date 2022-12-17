@@ -148,7 +148,6 @@ p {
 
 body {
   overflow-x: hidden;
-  margin-bottom: 100px;
 }
 
 a {
@@ -806,4 +805,97 @@ nav .btn-group .search-bar input::placeholder {
     width: 500px;
     padding: 10px;
   }
+}
+footer {
+  padding: 50px 130px;
+  background-color: #fceed5;
+}
+footer .subscribe-form {
+  border-radius: 10px;
+  background-color: #003456;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 2rem 1.5rem;
+}
+footer .subscribe-form .form-title {
+  width: 40%;
+}
+footer .subscribe-form .form-title p {
+  font-size: 24px;
+  color: #fdfdfd;
+  font-weight: 500;
+}
+footer .subscribe-form .form-input {
+  padding: 1rem;
+  border-radius: 10px;
+  height: 72px;
+  background-color: #fdfdfd;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+footer .subscribe-form .form-input input {
+  width: 90%;
+  height: 40px;
+  border: 1.5px solid #99a2a5;
+  border-radius: 8px;
+  padding: 1em;
+}
+footer .subscribe-form .form-input input::-moz-placeholder {
+  font-size: 12px;
+  font-weight: 500;
+}
+footer .subscribe-form .form-input input:-ms-input-placeholder {
+  font-size: 12px;
+  font-weight: 500;
+}
+footer .subscribe-form .form-input input::placeholder {
+  font-size: 12px;
+  font-weight: 500;
+}
+footer .subscribe-form .form-input button {
+  height: 40px;
+  width: 20%;
+  background-color: #003456;
+  color: #fdfdfd;
+  border-radius: 8px;
+}
+footer .footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  border-bottom: 1.5px solid #ccd1d2;
+}
+footer .footer-links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+footer .footer-links ul a {
+  color: #00171f;
+}
+footer .footer-links .social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+footer .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+footer .copyright a {
+  margin-right: 10px;
+  color: #667479;
+}
+footer .copyright p {
+  color: #667479;
 }/*# sourceMappingURL=main.css.map */
