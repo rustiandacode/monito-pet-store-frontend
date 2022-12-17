@@ -258,14 +258,23 @@ button {
 
 @media only screen and (max-width: 600px) {
   .card {
-    width: 180px;
     padding: 10px;
+  }
+  .card .categories {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+  }
+  .card .categories span {
+    color: #667479;
   }
 }
 @media only screen and (max-width: 500px) {
   .card {
-    width: 160px;
     padding: 10px;
+    margin: 7px;
   }
   .card .gift span {
     width: 5px;
@@ -274,7 +283,6 @@ button {
 }
 @media only screen and (max-width: 400px) {
   .card {
-    width: 140px;
     padding: 10px;
   }
 }
@@ -662,6 +670,9 @@ nav .btn-group .search-bar input::placeholder {
   .our-product {
     margin: 30px 1.5rem 0 1.5rem;
   }
+  .our-product .our-product-button {
+    display: none;
+  }
 }
 @media only screen and (max-width: 400px) {
   .card {
@@ -686,6 +697,11 @@ nav .btn-group .search-bar input::placeholder {
   gap: 10px;
 }
 
+@media only screen and (max-width: 810px) {
+  .brands {
+    display: none;
+  }
+}
 .banner-2 {
   margin: 50px 130px;
 }
@@ -741,6 +757,11 @@ nav .btn-group .search-bar input::placeholder {
   top: 100px;
 }
 
+@media only screen and (max-width: 810px) {
+  .banner-2 {
+    display: none;
+  }
+}
 .blog {
   margin: 50px 130px;
 }
@@ -757,7 +778,8 @@ nav .btn-group .search-bar input::placeholder {
   flex-wrap: wrap;
 }
 .blog .blog-content .card {
-  max-width: 340px;
+  max-width: 345px;
+  margin: 10px auto;
 }
 .blog .blog-content .card .category p {
   width: -webkit-fit-content;
@@ -771,4 +793,17 @@ nav .btn-group .search-bar input::placeholder {
 .blog .blog-content .card .blog-title {
   color: #00171f;
   margin: 10px 0;
+}
+
+@media only screen and (max-width: 810px) {
+  .blog {
+    margin: 30px 1.5rem 0 1.5rem;
+  }
+  .blog .blog-button {
+    display: none;
+  }
+  .blog .card {
+    width: 500px;
+    padding: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */

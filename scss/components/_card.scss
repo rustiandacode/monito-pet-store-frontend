@@ -51,15 +51,22 @@
 
 @media only screen and (max-width: 600px) {
   .card {
-    width: 180px;
     padding: 10px;
+    .categories {
+      @include mixin.flexbox(start);
+      gap: 10px;
+      margin-bottom: 5px;
+      span {
+        color: colors.$neutral-60;
+      }
+    }
   }
 }
 
 @media only screen and (max-width: 500px) {
   .card {
-    width: 160px;
     padding: 10px;
+    margin: 7px;
     .gift {
       span {
         width: 5px;
@@ -71,7 +78,6 @@
 
 @media only screen and (max-width: 400px) {
   .card {
-    width: 140px;
     padding: 10px;
   }
 }

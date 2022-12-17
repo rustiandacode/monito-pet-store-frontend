@@ -12,7 +12,9 @@
     @include mixin.flexbox;
     flex-wrap: wrap;
     .card {
-      max-width: 340px;
+      max-width: 345px;
+      margin: 10px auto;
+
       .category {
         p {
           width: fit-content;
@@ -26,6 +28,19 @@
         color: colors.$neutral-100;
         margin: 10px 0;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .blog {
+    margin: 30px 1.5rem 0 1.5rem;
+    .blog-button {
+      display: none;
+    }
+    .card {
+      width: 500px;
+      padding: 10px;
     }
   }
 }
