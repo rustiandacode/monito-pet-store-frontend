@@ -6,6 +6,7 @@
 @use 'components/button';
 @use 'components/card';
 @use 'components/navbar';
+@use 'components/footer';
 
 // layouts
 @use 'layouts/hero';
@@ -15,4 +16,3 @@
 @use 'layouts/brands';
 @use 'layouts/banner2';
 @use 'layouts/blog';
-@use 'layouts/footer';
